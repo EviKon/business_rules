@@ -58,5 +58,13 @@ RSpec.describe FizzBuzz do
         expect(subject).to eql('Fizz')
       end
     end
+
+    context 'when the number includes number 5 but its not multiplied by it' do
+      let(:number) { 52 }
+
+      it 'returns Buzz' do
+        expect(subject).to eql('Buzz')
+      end
+    end
   end
 end
