@@ -42,5 +42,13 @@ RSpec.describe FizzBuzz do
         expect(subject).to eql('Buzz')
       end
     end
+
+    context 'when the number is multiple of 3 and 5' do
+      let(:number) { 15 }
+
+      it 'returns FizzBuzz' do
+        expect(subject).to eql('FizzBuzz')
+      end
+    end
   end
 end
