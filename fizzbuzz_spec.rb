@@ -50,5 +50,13 @@ RSpec.describe FizzBuzz do
         expect(subject).to eql('FizzBuzz')
       end
     end
+
+    context 'when the number includes number 3 but its not a multiple of 3' do
+      let(:number) { 13 }
+
+      it 'returns Fizz' do
+        expect(subject).to eql('Fizz')
+      end
+    end
   end
 end
